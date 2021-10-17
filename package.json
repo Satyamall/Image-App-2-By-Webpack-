@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "analyze": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21",
+    "webpack-bundle-analyzer": "^4.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  },
+  "description": ""
+}
