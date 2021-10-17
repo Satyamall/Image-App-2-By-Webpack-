@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "analyze": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
+    "analyze": "webpack --profile --json > stats.json && webpack-bundle-analyze stats.json",
+    "analyze1": "webpack --profile --json > stats.json && html-webpack-plugin stats.json"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "webpack-bundle-analyzer": "^4.5.0"
   },
   "devDependencies": {
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.4.0",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.0"
   },

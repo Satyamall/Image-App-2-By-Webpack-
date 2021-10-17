@@ -37,7 +37,6 @@ function getData(search){
         for(let i=0;i<data.length;i++){
             container.append(createCards(data[i],search));
         }
-
        document.body.append(container);
     })
 }
@@ -56,6 +55,10 @@ const createCards = (data,search) => {
         p.style.textAlign = "center";
         p.style.fontSize = "20px";
         div.append(img,p);
+        div.addEventListener("click",()=>{
+            alert(`Image Category : ${search}\n Alt_Description: ${data.alt_description}\n User Name : ${data.user.first_name , data.user.last_name}\n User Bio: ${data.user.bio} \nImage ID : ${data.id}\nImage Description : ${data.description}`);
+        })
+
     return div;
 }
 

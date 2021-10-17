@@ -1,4 +1,8 @@
-
+import './Fashion.html'
+import './Nature.html'
+import './Film.html'
+import './People.html'
+import './Technology.html'
 
 const Navbar = () => {
     const div = document.createElement("div");
@@ -24,12 +28,13 @@ const Navbar = () => {
     `
     const nav2 = document.createElement("div");
     nav2.className="nav2";
-    nav2.innerHTML = `
-        <a href="" >Fashion</a>
-        <a href="" >Nature</a>
-        <a href="">Film</a>
-        <a href="">People</a>
-        <a href="">Technology</a>
+    nav2.innerHTML =`
+        <a href="index.html">Home</a>
+        <a href="Fashion.html" >Fashion</a>
+        <a href="Nature.html" >Nature</a>
+        <a href="Film.html">Film</a>
+        <a href="People.html">People</a>
+        <a href="Technology.html">Technology</a>
     `
     div.append(nav,nav2)
     return div
